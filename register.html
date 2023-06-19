@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MarketPlace</title>
+        <title>Register - MarketPlace</title>
 
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -71,7 +71,7 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                    <div class="text-end">
+                                    <div class="header-links text-end">
                                         <span>
                                             <i class="fa fa-lock"></i>
                                             <a href="/login.html">Login</a>
@@ -140,16 +140,88 @@
             </div>
         </header>
 
-        <section class="main-body container-fluid px-5">
+        <section class="main-body container-fluid p-5">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="py-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="/">
+                            <i class="fa fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Account</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Register</li>
+                </ol>
+            </nav>
+
             <div class="row gx-1">
-                <div class="col-2">
-                    <div class="shadow">
-                        Left Sidebar
-                    </div>
+                <div class="col-9">
+                    <form class="register-form">
+                        <fieldset class="mb-4">
+                            <h4>Your Personal Details</h4>
+                            <hr>
+                            <div class="row mb-3">
+                                <label for="firstname" class="col-sm-2 col-form-label">First Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="firstname">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="lastname" class="col-sm-2 col-form-label">Last Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="lastname">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Telephone</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="inputPassword3">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <h4>Your Password</h4>
+                            <hr>
+
+                            <div class="row mb-3">
+                                <label for="password" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="password2" class="col-sm-2 col-form-label">Confirm Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="password2">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-dark">Create Account</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-10 px-5 py-3">
-                    <div class="row">
-                        Right Sidebar
+                <div class="col-3 login-sidebar ps-5 pd-3">
+                    <div class="card">
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="#">Register</a>
+                            <a class="nav-link" href="#">Forgotten Password</a>
+                            <a class="nav-link" href="#">My Account</a>
+                            <a class="nav-link" href="#">Address Book</a>
+                            <a class="nav-link" href="#">Wish List</a>
+                            <a class="nav-link" href="#">Order History</a>
+                            <a class="nav-link" href="#">Downloads</a>
+                        </nav>
                     </div>
                 </div>
             </div>

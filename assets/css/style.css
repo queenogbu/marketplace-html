@@ -1,12 +1,19 @@
-header {
-    background-color: rgba(0, 0, 128, 0.918);
+header, .newsletter {
+    background-color: #232f3e;
     color: white;
-    /* height: 200px; */
 }
 
 header a {
-    color: white;
+    color: white !important;
     text-decoration: none;
+}
+
+header a.dropdown-item {
+    color: black !important;
+}
+
+header a:hover {
+    color: #ff3c20 !important;
 }
 
 .welcome-top {
@@ -23,6 +30,14 @@ header a {
     background-color: #ff3c20;
     border: none;
     color: white;
+}
+
+/* .header-links a:hover {
+    color: white;
+} */
+
+.categories-btn {
+    position: relative;
 }
 
 .shopping-bag {
@@ -44,4 +59,33 @@ header a {
 .col-9-5 {
     flex: 0 0 auto;
     width: 79.16666667%;
+}
+
+.newsletter .socials a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: white;
+}
+
+.newsletter .socials a:hover {
+    color: #ff3c20;
+}
+
+/* LOGIN & REGISTRATION */
+.login-sidebar .nav-link {
+    border-bottom: 1px solid #ddd;
+    color: black;
+}
+.login-sidebar .nav-link:hover {
+    background-color: #eee;
+}
+
+.login-sidebar a:last-child {
+    border-bottom: none;
+}
+
+/* REGISTRATION */
+.register-form label {
+    text-align: right;
 }

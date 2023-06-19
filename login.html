@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MarketPlace</title>
+        <title>Login - MarketPlace</title>
 
         <link rel="stylesheet" href="assets/css/bootstrap.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -71,7 +71,7 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                    <div class="text-end">
+                                    <div class="header-links text-end">
                                         <span>
                                             <i class="fa fa-lock"></i>
                                             <a href="/login.html">Login</a>
@@ -140,16 +140,69 @@
             </div>
         </header>
 
-        <section class="main-body container-fluid px-5">
+        <section class="main-body container-fluid p-5">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="py-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="/">
+                            <i class="fa fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">Account</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Login</li>
+                </ol>
+            </nav>
+
             <div class="row gx-1">
-                <div class="col-2">
-                    <div class="shadow">
-                        Left Sidebar
+                <div class="col-9">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card p-4">
+                                <h2>New Customer</h2>
+
+                                <p class="fw-bold">Register Account</p>
+
+                                <p>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
+
+                                <div>
+                                    <button type="submit" class="btn btn-dark">CONTINUE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card p-4">
+                                <form class="register-form">
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="text" class="form-control" id="email" placeholder="Email address">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="text" class="form-control" id="password" placeholder="Password">
+                                    </div>
+
+                                    <div class="text-end">
+                                        <button type="submit" class="btn btn-dark">Create Account</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-10 px-5 py-3">
-                    <div class="row">
-                        Right Sidebar
+                <div class="col-3 login-sidebar ps-5 pd-3">
+                    <div class="card">
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link" href="#">Register</a>
+                            <a class="nav-link" href="#">Forgotten Password</a>
+                            <a class="nav-link" href="#">My Account</a>
+                            <a class="nav-link" href="#">Address Book</a>
+                            <a class="nav-link" href="#">Wish List</a>
+                            <a class="nav-link" href="#">Order History</a>
+                            <a class="nav-link" href="#">Downloads</a>
+                        </nav>
                     </div>
                 </div>
             </div>
