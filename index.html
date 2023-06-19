@@ -42,14 +42,20 @@
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Link</a>
+                                            <a class="nav-link" href="#">ABOUT</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">CATEGORIES</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">PAGES</a>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Dropdown
+                                                MORE
                                             </a>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <li>
@@ -82,16 +88,16 @@
                 </div>
 
                 <div class="row my-4">
-                    <div class="col-3">
-                        <button class="category-btn">
+                    <div class="col-2-5">
+                        <button class="header-btn">
                             <i class="fa fa-bars"></i>
-                            ALL CATEGORIES
+                            <div class="d-inline-block px-3">ALL CATEGORIES</div>
                             <i class="fa fa-angle-down"></i>
                         </button>
                     </div>
-                    <div class="col-6">
+                    <div class="col-5-5">
                         <div class="input-group">
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All Category</button>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a class="dropdown-item" href="#">Action before</a>
@@ -108,17 +114,40 @@
                                 </li>
                             </ul>
                             <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
-                            <button class="px-5">
+                            <button class="px-5 header-btn">
                                 <i class="fa fa-search"></i>
                             </button>
                         </div>
                     </div>
-                    <div class="col-3">Cart</div>
+                    <div class="col-4 text-end">
+                        <div class="d-inline-block mx-4">
+                            <i class="fa fa-refresh fa-2x"></i>
+                        </div>
+                        <div class="d-inline-block mx-4">
+                            <i class="fa fa-heart fa-2x"></i>
+                        </div>
+                        <div class="d-inline-block mx-4 position-relative shopping-bag">
+                            <i class="fa fa-shopping-bag fa-lg"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-dark">
+                                0
+                            </span>
+                        </div>
+                        <div class="d-inline-block fw-bold">
+                            MY CART - $0.00
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <script src="assets/js/jquery.js"></script>
-        <script src="assets/js/bootstrap.js"></script>
+        <section class="main-body container-fluid px-5">
+            <div class="row gx-1">
+                <div class="col-2 border">Left Sidebar</div>
+                <div class="col-10 border">Right Sidebar</div>
+            </div>
+        </section>
+
+        <!-- <script src="assets/js/jquery.js"></script> -->
+        <script src="assets/js/bootstrap.bundle.js"></script>
     </body>
 </html>
