@@ -1,0 +1,26 @@
+header {
+    background-color: rgba(0, 0, 128, 0.918);
+    color: white;
+    /* height: 200px; */
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.welcome-top {
+    font-size: 12px;
+}
+
+.inline-divider {
+    color: #999;
+}
+
+.category-btn {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #ff3c20;
+    border: none;
+    color: white;
+}
